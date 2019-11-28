@@ -12,6 +12,7 @@ namespace HostBasedStartUpExample.Logic
         {
             _env = env;
             Console.WriteLine($"Environment that is set manually through hostsetting.json is {ctx.Configuration["ASPNETCORE_ENVIRONMENT"]}");
+            Console.WriteLine($"Environment specific variable is therefor: {ctx.Configuration["Stuff"]}");
         }
 
         public bool Start()
